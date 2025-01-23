@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+<body>
+    <script>
+     var nilai = prompt("Nama Bulan Masehi");
+     var grade = "";
+
+     if (nilai <= 1) grade = 'januari'
+     else if(nilai <= 2) grade = 'februari'
+     else if(nilai <= 3) grade = 'maret'
+     else if(nilai <= 4) grade = 'april'
+     else if(nilai <= 5) grade = 'mei'
+     else if(nilai <= 6) grade = 'juni'
+     else if(nilai <= 7) grade = 'juli'
+     else if(nilai <= 8) grade = 'agustus'
+     else if(nilai <= 9) grade = 'september'
+     else if(nilai <= 10) grade = 'oktober'
+     else if(nilai <= 11) grade = 'november'
+     else if(nilai <= 12) grade = 'desember'
+     else grade = 'Nilai tidak valid'
+
+        document.write(`<p>Bulan ${grade}</p>`);
+    </script>
+</body>
+</html>

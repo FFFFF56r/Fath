@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+<body>
+    <script>
+    function kalkulator() {
+    let angka1 = parseFloat(prompt("Masukkan angka pertama:"));
+    let angka2 = parseFloat(prompt("Masukkan angka kedua:"));
+    let operasi = prompt("Pilih operasi (+, -, *, /):");
+
+    if (isNaN(angka1) || isNaN(angka2)) {
+        alert("Harap masukkan angka yang valid.");
+        return;
+    }
+
+    let hasil;
+    switch (operasi) {
+        case '+':
+            hasil = angka1 + angka2;
+            break;
+        case '-':
+            hasil = angka1 - angka2;
+            break;
+        case '*':
+            hasil = angka1 * angka2;
+            break;
+        case '/':
+            if (angka2 === 0) {
+                alert("Pembagian oleh nol tidak diperbolehkan.");
+                return;
+            }
+            hasil = angka1 / angka2;
+            break;
+        default:
+            alert("Operasi tidak valid.");
+            return;
+    }
+
+    alert("Hasil: " + hasil);
+}
+
+kalkulator();
+    </script>
+</body>
+</html>

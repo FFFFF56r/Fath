@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+<body>
+    <script>
+    function cekTahun() {
+    let tahun = parseInt(prompt("Masukkan tahun yang ingin diperiksa:"));
+
+    if (isNaN(tahun)) {
+        alert("Harap masukkan angka yang valid.");
+        return;
+    }
+
+    if ((tahun % 4 === 0 && tahun % 100 !== 0) || (tahun % 400 === 0)) {
+        alert(tahun + " adalah tahun kabisat.");
+    } else {
+        alert(tahun + " adalah tahun masehi biasa.");
+    }
+}
+
+cekTahun();
+    </script>
+</body>
+</html>

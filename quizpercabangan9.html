@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+<body>
+    <script>
+        function hitungDiskon(totalBelanja) {
+            let diskon = 0;
+          
+            if (totalBelanja > 1500000) {
+              diskon = 0.15; 
+              
+            } else if (totalBelanja > 500000) {
+              diskon = 0.10; 
+            }
+          
+            const jumlahDiskon = totalBelanja * diskon;
+            const totalBayar = totalBelanja - jumlahDiskon;
+          
+            return {
+              totalBelanja,
+              diskon: diskon * 100 + '%',
+              jumlahDiskon,
+              totalBayar
+            };
+          }
+    </script>
+</body>
+</html>
+
